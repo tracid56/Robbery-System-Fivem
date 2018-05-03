@@ -681,7 +681,7 @@ AddEventHandler("robberies:StartRobbery", function(cops)
 				timeout = 10000,
 				layout = "centerRight",
 				queue = "right"
-    		}
+    		})
 			TaskPlayAnim(GetPlayerPed(-1),"mini@repair","fixing_a_player", 8.0, 0.0, -1, 1, 0, 0, 0, 0)     
 			isRobbing=true
 			spotBeingRobbed.beingRobbed=true
@@ -723,7 +723,7 @@ function StopRobbery()
 		timeout = 10000,
 		layout = "centerRight",
 		queue = "right"
-    }
+    })
 	isRobbing=false
 	spotBeingRobbed.beingRobbed=false
 	robbableSpots[spotBeingRobbed.name]=spotBeingRobbed
